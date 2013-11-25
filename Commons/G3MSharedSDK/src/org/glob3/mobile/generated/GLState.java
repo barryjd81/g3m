@@ -21,8 +21,7 @@ package org.glob3.mobile.generated;
 
 
 
-//C++ TO JAVA CONVERTER TODO TASK: Multiple inheritance is not available in Java:
-public class GLState extends RCObject, GPUProgramListener
+public class GLState extends RCObject implements GPUProgramListener
 {
   private GLFeatureSet _features = new GLFeatureSet();
   private GLFeatureSet _accumulatedFeatures;

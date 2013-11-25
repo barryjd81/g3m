@@ -215,15 +215,8 @@ public class GPUProgram
   
     _createdAttributes = null;
     _createdUniforms = null;
-    
-    for (GPUProgramListener listener: _listeners){
-    	listener.gpuProgramDeleted();
-    }
-    
   
-    for (java.util.Iterator<const GPUProgramListener> it = _listeners.iterator(); it.hasNext();)
-    {
-      final GPUProgramListener listener = it.next();
+    for (GPUProgramListener listener: _listeners){
       listener.gpuProgramDeleted();
     }
   
