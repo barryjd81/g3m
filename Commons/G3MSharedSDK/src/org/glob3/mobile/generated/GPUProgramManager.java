@@ -154,8 +154,8 @@ public class GPUProgramManager
 
   public final void compiledProgramDeleted(String name)
   {
-	  if (_programs.remove(name) == null){
-		  ILogger.instance().logError("Trying to delete program from GPUProgramManager that does not exist.");
-	  }
+    if (_programs.remove(name) == null){
+      ILogger.instance().logError("Trying to delete program from GPUProgramManager that does not exist.");
+    }
   }
 }
